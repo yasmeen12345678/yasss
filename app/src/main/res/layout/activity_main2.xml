@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".MainActivity2"
+    android:background="@drawable/soso">
+
+
+    <!--  <TextView
+          android:id="@+id/Time"
+          android:layout_width="300dp"
+          android:layout_height="wrap_content"
+          android:text="00:00:00"
+          android:layout_alignParentLeft="true"
+
+          />-->
+    <TextView
+        android:id="@+id/Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="58dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        style="@style/myStyle"/>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnStop"
+        android:layout_alignParentLeft="true"
+        android:onClick="btnStartOnClick"
+        android:text="Start"
+        style="@style/myStyle"/>
+
+
+    <Button
+        android:id="@+id/btnPause"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnStart"
+        android:layout_alignParentLeft="true"
+
+        android:onClick="btnPauseOnClick"
+        android:text="Pause"
+        style="@style/myStyle"/>
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Time"
+        android:layout_alignParentLeft="true"
+        android:onClick="btnStopOnClick"
+        android:text="Stop"
+        style="@style/myStyle"/>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

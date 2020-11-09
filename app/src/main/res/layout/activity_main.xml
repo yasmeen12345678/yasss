@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/so">
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/txtName"
+        android:text="name"
+        style="@style/myStyle"/>
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+
+
+        />
+
+
+    <TextView
+        android:id="@+id/height"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Name"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/txtHeight"
+        android:text="height"
+        style="@style/myStyle"
+
+        />
+
+    <EditText
+        android:id="@+id/txtHeight"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:layout_alignParentRight="true"
+
+
+        />
+
+    <TextView
+        android:id="@+id/weight"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/height"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/txtWeight"
+        android:text="weight"
+        style="@style/myStyle"
+        />
+
+    <EditText
+        android:id="@+id/txtWeight"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHeight"
+        android:layout_alignParentRight="true"
+
+
+        />
+
+    <Spinner
+
+        android:id="@+id/SpinnerGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtWeight"
+        android:layout_alignParentLeft="true"
+        style="@style/myStyle"
+        />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SpinnerGender"
+        android:layout_alignParentRight="true"
+        android:onClick="btnSaveOnClick"
+        android:text="Save"
+        style="@style/myStyle"/>
+
+
+
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSave"
+        android:layout_alignParentRight="true"
+        android:onClick="btnCalcOnClick"
+        android:text="calculate Bmi"
+        style="@style/myStylee"
+        />
+
+
+    <EditText
+        android:id="@+id/txtBodyMassIndex"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCalc"
+        android:layout_alignParentRight="true"
+        />
+
+
+    <Button
+        android:id="@+id/btnStopWatch"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtBodyMassIndex"
+        android:layout_alignParentRight="true"
+        android:onClick="btnStopWatchOnClick"
+        android:text="StopWatch"
+        style="@style/myStyle"
+        />
+
+
+    /*    <CheckBox
+    android:id="@+id/ChcBox"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/btnStopWatch"
+    android:layout_alignParentRight="true"
+    style="@style/myStyle"
+    android:text="CheckBox" />*/
+
+</RelativeLayout>
